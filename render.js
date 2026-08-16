@@ -1,34 +1,56 @@
 const timer = document.getElementById("timer");
 const pause = document.getElementById("pauseButton");
 const start = document.getElementById("startButton");
-
-let minutes=0;
-let seconds=10;
-let setTime=null;
-
-start.addEventListener("click",()=>{
-    if (setTime===null){
-    setTime=setInterval(() => {
-
-    if (minutes === 0 && seconds === 0){ 
-    clearInterval(setTime);
-    setTime = null;
-    minutes=25;
-    seconds=0;
-    timer.innerText=`${minutes}:${seconds.toString().padStart(2,"0")}`
-    return;
+const reset = document.getElementById("resetButton");
+const mode_work = document.getElementById("mode_work");
+let minutes = 25;
+let seconds =0;
+let setTime = null;
+let mode = "work";
+function updateTime(){
+    timer.innerText = `${minutes}:${seconds.toString().padStart(2, "0")}`;
 }
-    if (seconds==0){
+start.addEventListener("click", () => {
+  if (setTime === null) {
+    setTime = setInterval(() => {
+      if (minutes === 0 && seconds === 0) {
+        if(mode==="work"){
+            
+            minutes=5;
+            seconds=0;
+            mode="break";
+            mode_work.innerText="Break";
+        }else{
+            
+            minutes=25;
+            seconds=0;
+            mode="work";
+            mode_work.innerText="Work";
+        }
+        updateTime();
+        return;
+      }
+      if (seconds == 0) {
         minutes--;
-        seconds=59;
-    }else{
+        seconds = 59;
+      } else {
         seconds--;
-    }
-    timer.innerText=`${minutes}:${seconds.toString().padStart(2,"0")}`
-}, 1000);
-}})
+      }
+      updateTime();
+    }, 1000);
+  }
+});
 
-pause.addEventListener("click",()=>{
-    clearInterval(setTime);
-    setTime=null;
-})
+pause.addEventListener("click", () => {
+  clearInterval(setTime);
+  setTime = null;
+});
+
+reset.addEventListener("click", () => {
+  seconds = 0;
+  minutes = 25;
+  mode="work";
+  updateTime();
+  clearInterval(setTime);
+  setTime = null;
+});
