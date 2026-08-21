@@ -1,0 +1,17 @@
+.frame-2,
+.frame-2 * {
+  box-sizing: border-box;
+}
+.frame-2 {
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+.home {
+  height: auto;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 0px;
+  overflow: visible;
+}
