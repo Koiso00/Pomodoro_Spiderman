@@ -3,12 +3,13 @@ const pause = document.getElementById("pauseButton");
 const start = document.getElementById("startButton");
 const reset = document.getElementById("resetButton");
 const mode_work = document.getElementById("mode_work");
+console.log(start);
 let minutes = 25;
-let seconds =0;
+let seconds = 0;
 let setTime = null;
 let mode = "work";
 function updateTime(){
-    timer.innerText = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+    timer.innerText = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 }
 start.addEventListener("click", () => {
   if (setTime === null) {

@@ -1,0 +1,71 @@
+.frame {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 400px;
+  min-height: 500px;
+  position: relative;
+}
+
+.frame .rectangle {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  width: 360px;
+  height: 319px;
+  aspect-ratio: 1.13;
+  object-fit: cover;
+}
+
+.frame .tracker-png {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 500px;
+  aspect-ratio: 0.8;
+  object-fit: cover;
+}
+
+.frame .start-button {
+  position: absolute;
+  top: 355px;
+  left: calc(50.00% - 104px);
+  width: 240px;
+  height: 240px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.frame .ezgif-com-gif-maker {
+  position: absolute;
+  top: 327px;
+  left: 9px;
+  width: 74px;
+  height: 119px;
+  aspect-ratio: 0.62;
+  object-fit: cover;
+}
+
+.frame .hello-spiderman-this {
+  position: absolute;
+  top: 276px;
+  left: calc(50.00% - 166px);
+  width: 333px;
+  font-family: "Pixelify Sans", sans-serif; /* Sửa lại tên font và thêm fallback sans-serif */
+  font-weight: 400;
+  color: #9bc9da;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .tile {
+  position: absolute;
+  top: 56px;
+  left: 176px;
+  width: 48px;
+  height: 73px;
+  aspect-ratio: 0.66;
+  object-fit: cover;
+}

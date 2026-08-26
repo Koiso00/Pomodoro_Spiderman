@@ -1,0 +1,79 @@
+.frame-5,
+.frame-5 * {
+  box-sizing: border-box;
+}
+.frame-5 {
+  height: 500px;
+  position: relative;
+}
+.pixel-marvel-gif-by-kazerlelutin-2 {
+  width: 332px;
+  height: 332px;
+  position: absolute;
+  left: 46px;
+  top: 39px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.tracker-logo-3-1-png-1-1 {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+  aspect-ratio: 400/500;
+}
+.pixel-marvel-gif-by-kazerlelutin-1 {
+  width: 480px;
+  height: 480px;
+  position: absolute;
+  left: -51px;
+  top: 53px;
+  aspect-ratio: 1;
+}
+.ezgif-com-gif-maker-1-1 {
+  width: 74px;
+  height: 119px;
+  position: absolute;
+  left: 9px;
+  top: 327px;
+  object-fit: cover;
+  aspect-ratio: 74/119;
+}
+.out-button-3 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 300px;
+  top: 24px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.down-button-2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 273px;
+  top: 24px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.stop-button-1 {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  left: 96px;
+  top: 355px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.sound-on-1 {
+  width: 108px;
+  height: 108px;
+  position: absolute;
+  left: 48px;
+  top: 286px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
