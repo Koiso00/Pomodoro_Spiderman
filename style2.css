@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'MyPixelFont'; /* Đặt tên tùy ý cho font */
+  src: url('fonts/Minecraftia-Regular.ttf') format('truetype'); /* Dùng dấu / thay vì \ */
+  font-weight: normal;
+  font-style: normal;
+}
+.frame-4,
+.frame-4 * {
+  box-sizing: border-box;
+}
+.frame-4 {
+  background: #282828;
+  width: 400px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.tracker-logo-3-1-png-1-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 400/500;
+  z-index: 0;
+  pointer-events: none;
+}
+.ezgif-com-gif-maker-1-1 {
+  width: 74px;
+  height: 119px;
+  position: absolute;
+  left: 9px;
+  top: 327px;
+  object-fit: cover;
+  aspect-ratio: 74/119;
+}
+.out-button-3 {                                                                                                                                        
+      width: 100px;                                                                                                                                        
+      height: 100px;                                                                                                                                       
+      position: absolute;                                                                                                                                  
+      left: 300px;                                                                                                                                         
+      top: 24px;                                                                                                                                           
+      object-fit: cover;                                                                                                                                   
+      aspect-ratio: 1;                                                                                                                                     
+      clip-path: inset(25px 40px 40px 25px); /* Thu gọn vùng click quanh icon close */                                                                     
+    } 
+.down-button-2 {                                                                                                                                       
+      width: 100px;                                                                                                                                        
+      height: 100px;                                                                                                                                       
+      position: absolute;                                                                                                                                  
+      left: 273px;                                                                                                                                         
+      top: 24px;                                                                                                                                           
+      object-fit: cover;                                                                                                                                   
+      aspect-ratio: 1;                                                                                                                                     
+      clip-path: inset(25px 45px 40px 25px); /* Thu gọn vùng click quanh icon minimize */                                                                  
+    }   
+._25-00 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "MyPixelFont", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(50% - 119px);
+  pointer-events: none; /* allow clicks to pass through to underlying buttons if needed */
+}
+._3-button-2-1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 95px;
+  top: 227px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+._3-button-0-1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: calc(50% - 44px);
+  top: 223px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure images inside buttons fit and don't shift layout */
+button img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none; /* allow button to receive clicks, not the img */
+}
+
+/* Remove default button padding/background so they align exactly */
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+._3-button-1-1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 215px;
+  top: 227px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.stop-button-1 {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  left: 96px;
+  top: 355px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.sound-on-1 {
+  width: 108px;
+  height: 108px;
+  position: absolute;
+  left: 48px;
+  top: 286px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+/* Cho phép nắm giữ và kéo cửa sổ ứng dụng */
+.frame-4 {
+  -webkit-app-region: drag;
+}
+
+/* Các nút bấm cần hủy drag để nhấn được bình thường */
+button, 
+.down-button-2, 
+.out-button-3, 
+.stop-button-1 {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}

@@ -55,3 +55,18 @@ reset.addEventListener("click", () => {
   clearInterval(setTime);
   setTime = null;
 });
+
+const minimizeBtn = document.querySelector(".down-button-2");
+const closeBtn = document.querySelector(".out-button-3");
+
+if (minimizeBtn) {
+  minimizeBtn.addEventListener("click", () => {
+    window.electronAPI.minimizeWindow();
+  });
+}
+
+if (closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    window.electronAPI.closeWindow();
+  });
+}

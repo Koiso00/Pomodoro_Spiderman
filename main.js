@@ -1,16 +1,31 @@
-const { app, BrowserWindow } = require("electron");
+// main.js
+const { app, BrowserWindow, ipcMain } = require('electron');
+const path = require('path'); // <-- Thêm dòng này vào đầu file
+
+let mainWindow;
 
 function createWindow() {
-    const win = new BrowserWindow({
-        width: 440,
-        height: 600
-    });
+  mainWindow = new BrowserWindow({
+    width: 450,
+    height: 600,
+    frame: false,
+    transparent: true,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: false,
+      contextIsolation: true
+    }
+  });
 
-    win.loadFile("frame2.html");
+  mainWindow.loadFile('frame2.html');
 }
 
-app.whenReady().then(() => {
-    createWindow();
+ipcMain.on('window-minimize', () => {
+  if (mainWindow) mainWindow.minimize();
 });
 
+ipcMain.on('window-close', () => {
+  if (mainWindow) mainWindow.close();
+});
 
+app.whenReady().then(createWindow);
