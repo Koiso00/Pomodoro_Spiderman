@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="vars3.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="frame-3">
+      <img
+        class="pixel-marvel-gif-by-kazerlelutin-2"
+        src="picture\end\Pixel Marvel GIF by Kazerlelutin.gif"
+      />
+      <img
+        class="tracker-logo-3-1-png-1-1"
+        src="picture\background\tracker_logo3-1.png (1).png"
+      />
+      <img
+        class="ezgif-com-gif-maker-1-1"
+        src="picture\SpiderMan_HeadTurn_frames_76\ezgif.com-gif-maker (1).gif"
+      />
+      <button class="out-button-3">
+        <img src="picture/button/out_button.png" />
+      </button>
+      <button class="minimize-button-2">
+        <img src="picture/button/down_button.png" />
+      </button>
+      <button id="endButton" class="stop-button-1"><img  src="picture\button\stop_button.png" /></button>
+      <img class="sound-on-1" src="picture\button\sound_on.png" />
+    </div>
+    <script>
+      const outBtn = document.querySelector(".out-button-3");
+      const minimize = document.querySelector(".minimize-button-2");
+      const stopBtn = document.getElementById("endButton");
+      if (stopBtn){
+        stopBtn.addEventListener("click", ()=>{
+            window.electronAPI.closeWindow();
+        })
+      }
+      if (outBtn){
+        outBtn.addEventListener("click", ()=>{
+            window.electronAPI.closeWindow();
+        })
+      }
+      if (minimize){
+        minimize.addEventListener("click", ()=>{
+            window.electronAPI.minimizeWindow();
+        })
+      }
+    </script>
+  </body>
+</html>

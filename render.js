@@ -58,7 +58,7 @@ reset.addEventListener("click", () => {
 
 const minimizeBtn = document.querySelector(".down-button-2");
 const closeBtn = document.querySelector(".out-button-3");
-
+const endBtn = document.getElementById("endButton");
 if (minimizeBtn) {
   minimizeBtn.addEventListener("click", () => {
     window.electronAPI.minimizeWindow();
@@ -69,4 +69,10 @@ if (closeBtn) {
   closeBtn.addEventListener("click", () => {
     window.electronAPI.closeWindow();
   });
+}
+
+if (endBtn){
+  endBtn.addEventListener("click", ()=> {
+    window.location.href= "frame3.html";
+  })
 }
