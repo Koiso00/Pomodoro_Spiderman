@@ -1,0 +1,58 @@
+                                                                                                                                                                                                   
+    <!DOCTYPE html>                                                                                                                                                                                
+    <html lang="en">                                                                                                                                                                               
+    <head>                                                                                                                                                                                         
+        <meta charset="UTF-8">                                                                                                                                                                     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                                                                                     
+        <link rel="stylesheet" href="style1.css">                                                                                                                                                  
+        <link rel="stylesheet" href="vars1.css">                                                                                                                                                   
+        <title>Pomodoro Spiderman</title>                                                                                                                                                          
+    </head>                                                                                                                                                                                        
+    <body>                                                                                                                                                                                         
+        <div class="frame-1">                                                                                                                                                                      
+            <img class="rectangle-10-1" src="picture/background/rectangle-10.png" />                                                                                                               
+            <img class="tracker-logo-3-1-png-1-1" src="picture/background/tracker_logo3-1.png (1).png" />                                                                                          
+                                                                                                                                                                                                   
+                                                                                                                                                                 
+            <button class="out-button-3"><img src="picture/button/out_button.png" /></button>                                                                                                      
+            <button class="minimize-button-2"><img src="picture/button/down_button.png" /></button>                                                                                                    
+                                                                                                                                                                                                   
+                                                                                                                                                                               
+            <button id="start-button" class="start-button-3"><img src="picture/button/start_button.png" /></button>                                                                                
+                                                                                                                                                                                                   
+            <img class="ezgif-com-gif-maker-1-1" src="picture/SpiderMan_HeadTurn_frames_76/ezgif.com-gif-maker (1).gif" />                                                                         
+            <div class="hello-spiderman-this-time-for-work">                                                                                                                                       
+                Hello spiderman                                                                                                                                                                    
+                <br />                                                                                                                                                                             
+                It's time to work                                                                                                                                                                
+            </div>                                                                                                                                                                                 
+            <img class="tile-000-1" src="picture/ezgif-split/ezgif.com-gif-maker (1).gif" />                                                                                                       
+        </div>                                                                                                                                                                                     
+                                                                                                                                                                                                   
+        <script>                                                                                                                                                                                   
+                                                                                                                                                            
+            const start = document.getElementById("start-button");                                                                                                                                 
+            if (start) {                                                                                                                                                                           
+                start.addEventListener("click", () => {                                                                                                                                            
+                    window.location.href = "frame2.html";                                                                                                                                          
+                });                                                                                                                                                                                
+            }                                                                                                                                                                                      
+                                                                                                                                                                                                   
+                                                                                                                                                         
+            const minimizeBtn = document.querySelector(".minimize-button-2");                                                                                                                          
+            const closeBtn = document.querySelector(".out-button-3");                                                                                                                              
+                                                                                                                                                                                                   
+            if (minimizeBtn) {                                                                                                                                                                     
+                minimizeBtn.addEventListener("click", () => {                                                                                                                                      
+                    window.electronAPI.minimizeWindow();                                                                                                                                           
+                });                                                                                                                                                                                
+            }                                                                                                                                                                                      
+                                                                                                                                                                                                   
+            if (closeBtn) {                                                                                                                                                                        
+                closeBtn.addEventListener("click", () => {                                                                                                                                         
+                    window.electronAPI.closeWindow();                                                                                                                                              
+                });                                                                                                                                                                                
+            }                                                                                                                                                                                      
+        </script>                                                                                                                                                                                  
+    </body>                                                                                                                                                                                        
+    </html>     

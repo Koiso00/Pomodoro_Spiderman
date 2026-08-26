@@ -17,7 +17,7 @@ function createWindow() {
     }
   });
 
-  mainWindow.loadFile('frame2.html');
+  mainWindow.loadFile('frame1.html');
 }
 
 ipcMain.on('window-minimize', () => {
