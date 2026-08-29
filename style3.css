@@ -113,13 +113,4 @@ body {
       aspect-ratio: 1;                                                                                                                                                                             
     }                                                                                                                                                                                              
                                                                                                                                                                                                    
-    .sound-on-1 {                                                                                                                                                                                  
-      width: 108px;                                                                                                                                                                                
-      height: 108px;                                                                                                                                                                               
-      position: absolute;                                                                                                                                                                          
-      left: 48px;                                                                                                                                                                                  
-      top: 286px;                                                                                                                                                                                  
-      object-fit: cover;                                                                                                                                                                           
-      aspect-ratio: 1;                                                                                                                                                                             
-      pointer-events: none;                                                                                                                                                                        
-    }   
+   

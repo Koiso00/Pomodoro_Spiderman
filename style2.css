@@ -79,6 +79,7 @@ body {
   top: 227px;
   object-fit: cover;
   aspect-ratio: 1;
+  clip-path: inset(20px 30px 28px 15px); /* Thu gọn vùng click nút Reset, tránh đè sang Start */
 }
 ._3-button-0-1 {
   width: 100px;
@@ -91,6 +92,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  clip-path: inset(24px 30px 24px 12px); /* Căn chỉnh vùng click nút Start chính xác quanh icon */
 }
 
 /* Ensure images inside buttons fit and don't shift layout */
@@ -117,6 +119,7 @@ button {
   top: 227px;
   object-fit: cover;
   aspect-ratio: 1;
+  clip-path: inset(20px 15px 28px 15px); /* Thu gọn vùng click nút Pause, tránh đè sang Start */
 }
 .stop-button-1 {
   width: 240px;

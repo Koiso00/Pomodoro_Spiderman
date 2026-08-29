@@ -29,30 +29,7 @@
             <img class="tile-000-1" src="picture/ezgif-split/ezgif.com-gif-maker (1).gif" />                                                                                                       
         </div>                                                                                                                                                                                     
                                                                                                                                                                                                    
-        <script>                                                                                                                                                                                   
-                                                                                                                                                            
-            const start = document.getElementById("start-button");                                                                                                                                 
-            if (start) {                                                                                                                                                                           
-                start.addEventListener("click", () => {                                                                                                                                            
-                    window.location.href = "frame2.html";                                                                                                                                          
-                });                                                                                                                                                                                
-            }                                                                                                                                                                                      
-                                                                                                                                                                                                   
-                                                                                                                                                         
-            const minimizeBtn = document.querySelector(".minimize-button-2");                                                                                                                          
-            const closeBtn = document.querySelector(".out-button-3");                                                                                                                              
-                                                                                                                                                                                                   
-            if (minimizeBtn) {                                                                                                                                                                     
-                minimizeBtn.addEventListener("click", () => {                                                                                                                                      
-                    window.electronAPI.minimizeWindow();                                                                                                                                           
-                });                                                                                                                                                                                
-            }                                                                                                                                                                                      
-                                                                                                                                                                                                   
-            if (closeBtn) {                                                                                                                                                                        
-                closeBtn.addEventListener("click", () => {                                                                                                                                         
-                    window.electronAPI.closeWindow();                                                                                                                                              
-                });                                                                                                                                                                                
-            }                                                                                                                                                                                      
-        </script>                                                                                                                                                                                  
+        <script src="render.js"></script>                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                                                                                          
     </body>                                                                                                                                                                                        
     </html>     
